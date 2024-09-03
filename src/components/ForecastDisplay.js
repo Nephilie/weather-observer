@@ -5,7 +5,7 @@ const ForecastDisplay = () => {
   const forecastData = useWeatherStore((state) => state.forecastData);
 
   if (!forecastData) return (
-    <Container maxWidth="xs" sx={{ mt: 4 }}>
+    <Container maxWidth={false} sx={{ mt: 4 }}>
       <Typography variant="body1" color="textSecondary" align="center">
         No forecast data available. Please search for a location.
       </Typography>
@@ -25,10 +25,10 @@ const ForecastDisplay = () => {
   const days = Object.keys(groupedByDay).sort();
 
   return (
-    <Container maxWidth="md" sx={{ mt: 4 }}>
-      <Grid container spacing={3}>
+    <Container maxWidth={false} sx={{ mt: 4 }}>
+      <Grid container spacing={4}>
         {days.map(day => (
-          <Grid item xs={12} sm={4} key={day}>
+          <Grid item xs={12} sm={6} md={4} key={day}>
             <Paper elevation={3} sx={{ padding: 2, textAlign: 'center' }}>
               <Typography variant="h6" gutterBottom>
                 {day}

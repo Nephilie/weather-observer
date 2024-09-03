@@ -5,7 +5,7 @@ import { Container, Box, Typography } from '@mui/material';
 
 export default function Home() {
   return (
-    <Container maxWidth="xs" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
+    <Container maxWidth={false} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
       <Head>
         <title>Weather App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

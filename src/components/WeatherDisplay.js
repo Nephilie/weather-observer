@@ -17,7 +17,7 @@ const WeatherDisplay = () => {
   const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
 
   return (
-    <Container maxWidth="xs" sx={{ mt: 4 }}>
+    <Container maxWidth="md" sx={{ mt: 4 }}>
       <Paper elevation={3} sx={{ padding: 2 }}>
         <Box sx={{ textAlign: 'center' }}>
           <Typography variant="h5" gutterBottom>
