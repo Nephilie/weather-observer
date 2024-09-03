@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import WeatherForm from '../components/WeatherForm';
-import WeatherDisplay from '../components/WeatherDisplay';
+import ForecastDisplay from '../components/ForecastDisplay';
 import { Container, Box, Typography } from '@mui/material';
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
           Weather App
         </Typography>
         <WeatherForm />
-        <WeatherDisplay />
+        <ForecastDisplay />
       </Box>
     </Container>
   );

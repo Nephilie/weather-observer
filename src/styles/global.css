@@ -18,6 +18,10 @@ body {
     margin: 0;
   }
   
+  .Mui-Container-root {
+    max-width: none;
+  }
+
   @media (max-width: 600px) {
     .MuiTypography-h3 {
       font-size: 1.5rem;
